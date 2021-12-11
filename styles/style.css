@@ -325,6 +325,13 @@ footer p {
   margin: 0;
 }
 
+.contact-form {
+  height: 80vh;
+}
+
+.contact-form button {
+  background-color: #2da430;
+}
 
 
 
