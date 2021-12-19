@@ -1,0 +1,21 @@
+@import './mixins';
+
+.about-section {
+    @include section-textAndVideo;
+    padding: 0 2em;
+    
+
+  @media (min-width: $breakpoint-desktop) {
+    .section-textAndVideo {
+        @include flex-center-dir(row);
+        gap: 2em;
+        .section_text{
+            text-align: justify;
+            width: 30%;
+        }
+        iframe{
+            width: 50%;
+        }
+  }
+}
+}

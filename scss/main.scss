@@ -1,0 +1,41 @@
+@import "./mixins";
+@import "./variables";
+@import "./resets";
+@import "./navbar";
+@import "./hero-section";
+@import "./index-about";
+@import "./primera-consulta";
+@import './escogernos';
+@import './about-bienvenido';
+@import './components';
+@import "./footer";
+
+
+
+
+// MIXINS SHOULD DEFINE STYLES, FUNCTIONS SHOULD COMPUTE AND RETURN RESULTS
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  margin-bottom: 2em;
+}
+.section_title {
+  font-size: 3rem;
+  text-align: center;
+  color: $clr-primary;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+img {
+  width: 100px;
+}
+
+
+
+// .main {
+//   @include flex-center-dir(row);
+// }

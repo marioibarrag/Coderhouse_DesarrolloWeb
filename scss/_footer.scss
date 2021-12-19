@@ -1,0 +1,33 @@
+@import "./mixins";
+
+footer {
+  background-color: $clr-black;
+  color: $clr-white;
+  padding: 1em 0;
+
+  nav {
+    @include flex-center-dir(column);
+    gap: 1em;
+    .footer_contacto {
+      @include flex-center-dir(column);
+
+      a {
+        color: $clr-white;
+        text-decoration: none;
+      }
+    }
+
+    p {
+      margin: 0;
+    }
+
+    @media (min-width: $breakpoint-tablet) {
+      padding: 1em 1em;
+      @include flex-center-dir(row);
+      .footer_direccion {
+        @include flex-center-dir(row);
+        gap: 1em;
+      }
+    }
+  }
+}

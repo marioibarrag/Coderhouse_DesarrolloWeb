@@ -1,0 +1,38 @@
+@import "./mixins";
+
+.primeraConsulta-section {
+  @include flex-center-dir(column);
+
+  .primeraConsulta-section_contenedor {
+    @include flex-center-dir(column);
+    gap: 1em;
+    padding: 0 2em;
+
+    .primeraConsulta {
+      background-color: $clr-primary-light;
+      border-radius: 10%;
+      padding: 1em;
+      min-height: 300px;
+      max-height: 600px;
+      font-weight: bold;
+
+      h3 {
+        color: $clr-white;
+      }
+      img {
+        width: 200px;
+      }
+    }
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    .primeraConsulta-section_contenedor {
+      @include flex-center-dir(row);
+      flex-wrap: wrap;
+    }
+    .primeraConsulta {
+    
+      max-width: 40%;
+    }
+  }
+}

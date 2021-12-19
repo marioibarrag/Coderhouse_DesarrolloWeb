@@ -1,0 +1,29 @@
+@import "./mixins";
+
+.escogernos-section {
+  @include flex-center-dir(column);
+  @include section-textAndVideo;
+  padding: 0 2em;
+  background-color: $clr-grey-light;
+  margin-bottom: 0;
+
+  .btn-primary {
+      margin-bottom: 2em;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+    .section-textAndVideo {
+      margin-bottom: 2em;
+      @include flex-center-dir(row);
+      gap: 2em;
+      .section_text {
+        text-align: justify;
+        width: 30%;
+      }
+      iframe {
+        width: 50%;
+      }
+    }
+
+  }
+}

@@ -1,0 +1,56 @@
+@import "./mixins";
+
+.spine-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+
+  .section_text {
+  font-weight: normal;
+  width: 90%;
+}
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: justify;
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  img {
+    width: 80%;
+    margin-bottom: 2em;
+  }
+
+  @media (min-width: $breakpoint-desktop) {
+      height: 60vh;
+  @include flex-center-dir(row);
+    gap: 2em;
+
+  img {
+      width: 30%;
+  }
+  .section_text {
+      width: 50%;
+  }
+}
+}
+
+.equipo-section_miembros {
+  @include flex-center-dir(row);
+  flex-wrap: wrap;
+  gap: 2em;
+  img {
+    width: 200px;
+  }
+}
+

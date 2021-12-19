@@ -1,0 +1,24 @@
+@mixin flex-center-dir($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+  text-align: center;
+}
+
+@mixin section-textAndVideo {
+  text-align: justify;
+    font-weight: 600;
+  iframe {
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  a {
+    background-color: $clr-primary;
+    color: $clr-white;
+    font-size: 0.75rem;
+    padding: 5px;
+    text-decoration: none;
+  }
+}
