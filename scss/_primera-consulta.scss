@@ -25,7 +25,7 @@
     }
   }
 
-  @media (min-width: $breakpoint-tablet) {
+  @media (min-width: map-get($breakpoints, tablet)) {
     .primeraConsulta-section_contenedor {
       @include flex-center-dir(row);
       flex-wrap: wrap;

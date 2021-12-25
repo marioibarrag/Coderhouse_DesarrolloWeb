@@ -5,7 +5,7 @@
     padding: 0 2em;
     
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: map-get($breakpoints, desktop)) {
     .section-textAndVideo {
         @include flex-center-dir(row);
         gap: 2em;

@@ -21,7 +21,7 @@ footer {
       margin: 0;
     }
 
-    @media (min-width: $breakpoint-tablet) {
+    @media (min-width: map-get($breakpoints, tablet)) {
       padding: 1em 1em;
       @include flex-center-dir(row);
       .footer_direccion {

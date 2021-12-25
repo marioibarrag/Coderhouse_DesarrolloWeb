@@ -31,7 +31,7 @@
     margin-bottom: 2em;
   }
 
-  @media (min-width: $breakpoint-desktop) {
+  @media (min-width: map-get($breakpoints, desktop)) {
       height: 60vh;
   @include flex-center-dir(row);
     gap: 2em;
