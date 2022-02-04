@@ -10,7 +10,10 @@
         @include flex-center-dir(row);
         gap: 2em;
         .section_text{
-            text-align: justify;
+            // text-align: justify;
+            p {
+              text-align: center;
+            }
             width: 30%;
         }
         iframe{

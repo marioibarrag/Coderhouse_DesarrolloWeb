@@ -9,15 +9,14 @@
     padding: 0 2em;
 
     .primeraConsulta {
-      background-color: $clr-primary-light;
+      background-color: $clr-primary-lighter;
       border-radius: 10%;
       padding: 1em;
       min-height: 300px;
       max-height: 600px;
       font-weight: bold;
-
       h3 {
-        color: $clr-white;
+        color: $clr-white;    
       }
       img {
         width: 200px;

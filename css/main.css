@@ -3,6 +3,13 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+}
+
+main {
+  height: 100vh;
 }
 
 .navbar {
@@ -51,6 +58,7 @@
 
 .hero h1 {
   font-size: 3rem;
+  padding: 0 .5em;
 }
 
 .about-section {
@@ -91,8 +99,10 @@
     gap: 2em;
   }
   .about-section .section-textAndVideo .section_text {
-    text-align: justify;
     width: 30%;
+  }
+  .about-section .section-textAndVideo .section_text p {
+    text-align: center;
   }
   .about-section .section-textAndVideo iframe {
     width: 50%;
@@ -136,7 +146,7 @@
 }
 
 .primeraConsulta-section .primeraConsulta-section_contenedor .primeraConsulta {
-  background-color: #5cb15e;
+  background-color: #92d394;
   border-radius: 10%;
   padding: 1em;
   min-height: 300px;
@@ -272,11 +282,11 @@
 }
 
 .spine-section h3 {
-  text-align: justify;
+  text-align: center;
 }
 
 .spine-section p {
-  text-align: justify;
+  text-align: center;
 }
 
 .spine-section img {
@@ -467,6 +477,10 @@ footer nav p {
     text-align: center;
     gap: 1em;
   }
+}
+
+.contact-buttons {
+  margin-top: 100px;
 }
 
 body {
