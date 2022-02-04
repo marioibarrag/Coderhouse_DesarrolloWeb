@@ -1,0 +1,30 @@
+@import "./mixins";
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$accordion-color: white;
+$accordion-border-color: black;
+$accordion-button-bg: $clr-primary-light;
+$accordion-button-active-bg: $clr-primary;
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins/";
+
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/accordion";
+
+
+.preguntas-frecuentes {
+    @include flex-center-dir(column);
+    margin-top: 2em;
+
+    .accordion {
+        width: 100%;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+}
